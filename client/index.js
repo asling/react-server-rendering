@@ -3,11 +3,12 @@ import React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
+import  configureStore from '../src/store/configureStore';
 
 import Routes from '../src/routes';
 import history from '../src/history';
 
-const store = window.__PRELOADED_STATE__;
+const store = configureStore(window.__initialState__);
 delete window.__PRELOADED_STATE__;
 
 render(

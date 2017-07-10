@@ -4,7 +4,7 @@ import React from 'react';
 import { renderToString } from 'react-dom/server';
 import { StaticRouter } from 'react-router';
 import { Provider } from 'react-redux';
-import configureStore from '../src/store/createStore';
+import configureStore from '../src/store/configureStore';
 import Routes from '../src/routes';
 
 import webpack from 'webpack';
